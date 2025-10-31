@@ -1,0 +1,5 @@
+FROM nginx:alpine
+ENV TZ="Asia/Taipei"
+RUN apk add curl 
+COPY run.sh /root/run.sh
+CMD ["/root/run.sh"]
